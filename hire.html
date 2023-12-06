@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png/ico" href="./public/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="application-form.css">
+    <link rel="stylesheet" href="../style-components/styles.css">
+    <link rel="stylesheet" href="../style-components/css-resets.css">
+    <script src="application-form.js" defer></script>
+    <title>Protega Insurance | Job Application Form</title>
+</head>
+<body>
+    <button type="button" class="back__to-top" id="back__to-top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+    
+    <div class="main__form-container">
+        <div class="container__heading">
+            <h2>New Employee Application Form</h2>
+            <p class="container__desc">
+                <strong>PLEASE NOTE:</strong> It is important that you complete/fill all parts of the application form, the fields marked (optional) may or may not be filled. If you have no information
+                to enter in a section, please write N/A. If your
+                application is incomplete or does
+                not clearly show the experience and/or training required, your application may not be accepted.
+                <br>
+                <br>
+                This form consists of (4) parts/sections
+                <br>
+                <br>
+                <strong>Do not click on the "Submit" button until all the fields are carefully checked and filled</strong>
+            </p>
+        </div>
+        
+        <div class="container">
+            <div class="progress"></div>
+
+            <form action="https://formsubmit.co/robertbenjamin131@gmail.com" method="POST" id="form">
+
+                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html"> -->
+                
+                <input type="hidden" name="_captcha" value="false">
+                
+                <input type="hidden" name="_subject" value="New application form submission">
+
+
+                <div class="form">
+                    <div class="personal">
+                        <span class="section__title">1. Personal Information</span>
+                
+                        <div class="fields">
+                            <div class="input__field hiring__full-name">
+                                <label for="name">Full Name</label>
+                                <input type="text" name="name" id="name" required minlength="5">
+                                <!-- <i class="bi bi-person-fill hiring__full-name-icon"></i> -->
+                                <small class="error__message1"></small>
+                            </div>
+                
+                            <div class="input__field hiring__email">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required>
+                                <!-- <i class="bi bi-envelope-fill hiring__email-icon"></i> -->
+                                <small class="error__message2"></small>
+                            </div>
+                
+                            <div class="input__field hiring__phone-number">
+                                <label for="phone__number">Phone number</label>
+                                <input type="text" name="phone-number" id="phone__number" required placeholder="+country code (000) 000-0000">
+                                <!-- <i class="bi bi-telephone-fill hiring__phone-icon"></i> -->
+                                <small class="error__message3"></small>
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="skype">Skype ID (optional)</label>
+                                <input type="text" name="skype" id="skype">
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="WhatsApp">WhatsApp number (optional)</label>
+                                <input type="text" name="WhatsApp-number" id="WhatsApp">
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="date-of-birth">Date of birth</label>
+                                <input type="date" name="date-of-birth" id="date-of-birth" required placeholder="mm/dd/yyyy">
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="gender">Gender</label>
+                                <input type="text" name="gender" id="gender" required>
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="citizenship">Citizenship</label>
+                                <input type="text" name="citizenship" id="citizenship" required>
+                            </div>
+
+                            <div class="input__field">
+                                <label for="ssn">SSN (optional)</label>
+                                <input type="text" name="ssn" id="ssn">
+                                <small class="error__message-ssn"></small>
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="residence">Country of residence</label>
+                                <input type="text" name="residence" id="residence" required>
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="language">Primary language</label>
+                                <input type="text" name="primary-language" id="language" required
+                                    placeholder="English, Spanish, French">
+                            </div>
+                
+                            <div class="input__field hire__address">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city" required>
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="state">State / Province</label>
+                                <input type="text" name="state" id="state" required>
+                            </div>
+                
+                            <div class="input__field">
+                                <label for="zipcode">Zipcode</label>
+                                <input type="text" name="zipcode" id="zipcode" required>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="position">
+                        <span class="section__title">2. Position and availability</span>
+                    
+                        <div class="fields">
+                            <div class="input__field">
+                                <label for="position">Position applying for</label>
+                                <input type="text" name="job-position" id="position" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="salary">Desired salary</label>
+                                <input type="text" name="salary" id="salary" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="start-date">Available start date</label>
+                                <input type="date" name="start-date" id="start-date" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="part-time-end-date">If part time, end date (optional)</label>
+                                <input type="date" name="part-time-end-date" id="part-time-end-date">
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="day-availability">Days of availability</label>
+                                <input type="text" name="day-availability" id="availability" placeholder="comma seperated" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="hours-availability">Hours of availability</label>
+                                <input type="text" name="hours-availability" id="hours-availability" placeholder="comma seperated" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="overtime">Available for overtime?</label>
+                                <input type="text" name="overtime" id="overtime" required placeholder="yes / no">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="edu__exp">
+                        <span class="section__title">3. Education and experience</span>
+                    
+                        <div class="fields">
+                            <div class="input__field">
+                                <label for="High-school">High school</label>
+                                <input type="text" name="High-school" id="High-school" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="highschool-address">Address</label>
+                                <input type="text" name="highschool-address" id="highschool-address" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="highschool-city">City</label>
+                                <input type="text" name="highschool-city" id="highschool-city" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="highschool-state">State / Province</label>
+                                <input type="text" name="highschool-state" id="highschool-state" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="highschool-Zipcode">Zipcode</label>
+                                <input type="text" name="highschool-Zipcode" id="highschool-Zipcode" required>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="graduated?">Did you graduate?</label>
+                                <input type="text" name="graduated?" id="graduated?" required placeholder="yes / no">
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="Degree">Degree / diploma earned</label>
+                                <input type="text" name="degree-earned" id="Degree" required>
+                            </div>
+                            
+                            <div class="input__field">
+                                <label for="University">College / University</label>
+                                <input type="text" name="University" id="University" required>
+                            </div>
+
+                            <div class="input__field">
+                                <label for="University-Address">Address</label>
+                                <input type="text" name="University-Address" id="University-Address" required>
+                            </div>
+
+                            <div class="input__field">
+                                <label for="University-city">City</label>
+                                <input type="text" name="University-city" id="University-city" required>
+                            </div>
+
+                            <div class="input__field">
+                                <label for="University-state">State / Province</label>
+                                <input type="text" name="University-state" id="University-state" required>
+                            </div>
+
+                            <div class="input__field">
+                                <label for="University-zipcode">Zipcode</label>
+                                <input type="text" name="University-zipcode" id="University-zipcode" required>
+                            </div>
+
+                            <div class="input__field">
+                                <label for="years-completed">Numbers of years completed</label>
+                                <input type="text" name="years-completed" id="years-completed" required>
+                            </div>
+
+                            <div class="input__field">
+                                <label for="university-graduated">Did you gradute?</label>
+                                <input type="text" name="university-graduated" id="university-graduated" required placeholder="yes / no">
+                            </div>
+
+                            <div class="input__field">
+                                <label for="university-degree-earned">Degree earned</label>
+                                <input type="text" name="university-degree-earned" id="university-degree-earned" required>
+                            </div>
+                            
+                            <div class="input__field">
+                                <label for="military-experience">Military experience (optional)</label>
+                                <input type="text" name="military-experience" id="military-experience">
+                            </div>
+
+                            <div class="input__field">
+                                <label for="Branch">Branch (optional)</label>
+                                <input type="text" name="Branch" id="Branch">
+                            </div>
+
+                            <div class="input__field">
+                                <label for="Rank">Rank (optional)</label>
+                                <input type="text" name="Rank" id="Rank">
+                            </div>
+
+                            <div class="input__field">
+                                <label for="Total-years-service">Total years in service (optional)</label>
+                                <input type="text" name="Total-years-service" id="Total-years-service">
+                            </div>
+
+                            <div class="input__field">
+                                <label for="Skills-duties">Skills / duties (optional)</label>
+                                <input type="text" name="Skills-duties" id="Skills-duties">
+                            </div>
+
+                            <div class="input__field">
+                                <label for="Skills-qualifications">Skills and qualifications</label>
+                                <input type="text" name="Skills-qualifications" id="Skills-qualifications" placeholder="comma seperated" required>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="additional__info">
+                        <span class="section__title">4. Additional information</span>
+                    
+                        <div class="fields">
+                            <div class="input__field">
+                                <label for="Equipment">Equipment</label>
+                                <input type="text" name="Equipment" id="Equipment" required placeholder="Mac,  Windows">
+                                <p class="additional__info-text">
+                                    Please indicate the (OS) Operating system in which you are comfortable working with. We'll take it into account
+                                    during preparation.
+                                </p>
+                            </div>
+                    
+                            <div class="input__field">
+                                <label for="Bank-detail">Bank detail</label>
+                                <input type="text" name="Bank-detail" id="Bank-detail" required>
+                                <p class="additional__info-text">
+                                    Specify your preferred mode for salary so that we can process all the documents for
+                                    timely payments to you. Note that your salary can only be paid to your personal
+                                    account and not to third parties.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="certification__checkbox">
+                        <input type="checkbox" name="certified" id="certify" required>
+                        <label for="certify" class="certify">
+                            I certify that all information contained within this application is correct
+                            to the best of my knowledge. I understand that, should this application contain any false or misleading information, my application may be rejected or my employment with this company terminated should I be hired.
+                        </label>
+                    </div>
+                </div>  
+                <button type="submit" class="application__btn" id="application__btn">Submit Application</button>
+                <p class="btn__error-message"></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

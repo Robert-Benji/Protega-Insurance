@@ -1,0 +1,144 @@
+.insurance__products-section {
+    padding: 0 var(--general-padding-l-r);
+    margin-bottom: clamp(4rem, 2.5915rem + 6.0094vw, 8rem);
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
+}
+
+.top__text{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+}
+
+.insurance__products-section-mini-title {
+    background-color: var(--mini-title-bg);
+    padding: var(--mini-title-padding-all);
+    font-size: var(--mini-title-fs);
+    font-weight: 500;
+    color: var(--mini-title-text-color);
+    width: var(--mini-title-width);
+}
+
+.insurance__products-section-title {
+    font-weight: 700;
+    font-size: clamp(1.3rem, 0.8775rem + 1.8028vw, 2.5rem);
+    max-width: 50rem;
+}
+
+.top__p {
+    color: #999;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.938rem, 0.8563rem + 0.3485vw, 1.17rem);
+    max-width: 45rem;
+}
+
+.top__p span {
+    color: var(--green-primary);
+    font-weight: 600;
+}
+
+.insurance__products-section-btn {
+    display: none;
+    background-color: var(--green-primary);
+    border: .15rem solid transparent;
+    color: var(--white);
+    cursor: pointer;
+    font-size: clamp(0.9rem, 0.8426rem + 0.2449vw, 1.063rem);
+    font-weight: 600;
+    padding: clamp(0.9rem, 0.7986rem + 0.4327vw, 1.188rem) 
+            clamp(1.5rem, 1.3018rem + 0.8458vw, 2.063rem);
+    transition: all .5s ease;
+}
+
+.insurance__products-section-btn:is(:hover, :active) {
+    border: .15rem solid var(--green-primary);
+    background-color: transparent;
+    color: var(--black);
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1rem;
+}
+
+.box {
+    /* padding: 3.125rem 2.5rem; */
+    padding: 1.5rem 2rem;
+    border: .06rem solid var(--border-color);
+}
+
+.bottom__icon {
+    display: inline-block;
+    color: var(--green-primary);
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+    margin-bottom: 1.8rem;
+    /* margin-bottom: 2.2rem; */
+}
+
+.bottom__title {
+    max-width: clamp(6rem, 3.7113rem + 9.7653vw, 12.5rem);
+    font-weight: 700;
+    font-size: clamp(1.1rem, 0.8887rem + 0.9014vw, 1.7rem);
+    margin-bottom: 1.5rem;
+}
+
+.bottom__description {
+    color: #888;
+    font-weight: 400;
+    font-size: clamp(0.938rem, 0.8563rem + 0.3485vw, 1.17rem);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.bottom__btn {
+    font-weight: 600;
+    font-size: clamp(0.938rem, 0.8722rem + 0.2809vw, 1.125rem);
+    color: var(--green-primary);
+    position: relative;
+}
+
+.bottom__btn::before {
+    content: '';
+    position: absolute;
+    top: 1.3rem;
+    width: 0;
+    height: .2rem;
+    background-color: var(--green-primary);
+    transition: all .4s ease;
+}
+
+.bottom__btn:hover::before {
+    width: 100%;
+}
+
+
+@media (min-width: 71.25em) {  /* 1140px */
+    .insurance__products-section-btn {
+        display: block;
+    }
+}
+
+/* @media (min-width: 48em) {
+    .bottom__box2 {
+        display: block;
+    }
+} */
+
+@media (max-width: 48em) { /* 750px */
+    .insurance__products-section-mini-title {
+        margin: auto;
+    }
+
+    .insurance__products-section-title {
+        text-align: center;
+    }
+}

@@ -1,0 +1,92 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+:root {
+    /* FONT */
+    --ff: 'IBM Plex Mono', monospace;
+    --ff2: 'Montserrat', sans-serif;
+
+    /* COLORS */
+    --green-primary: #7aa65f;
+    --black: hsl(96, 15%, 13%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray-bg: #f7f7f7;
+    --medium-light-gray: hsl(0, 0%, 88%);
+    --border-color: #e0e0e0;
+    --mini-title-bg: #EEF0EC;
+    --mini-title-text-color: #555;
+    --white-smoke: whitesmoke;
+
+    /* SPACING */
+    --general-padding-l-r: clamp(1.1rem, -0.6254rem + 7.3615vw, 6rem);
+    --general-padding-all: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem) 
+                        clamp(1.1rem, -0.6254rem + 7.3615vw, 6rem);
+    --mini-title-width: max-content;
+    --mini-title-padding-all: .625em .938em;
+
+    /* SIZES */
+    --nav-link-fs: 1.125rem;
+    --mini-title-fs: clamp(0.8rem, 0.7296rem + 0.3005vw, 1rem);
+    --general-fs: clamp(0.938rem, 0.8563rem + 0.3485vw, 1.17rem);
+
+    --pic-br: .7rem;
+}
+
+body {
+    font-family: var(--ff);
+    font-size: 1rem;
+    min-height: 100vh;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0; 
+        transform: translateY(-2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.back__to-top {
+    background-color: var(--green-primary);
+    border-radius: 50%;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: clamp(1.6rem, 1.4239rem + 0.7512vw, 2.1rem);
+    position: fixed;
+    padding: .5rem .75rem;
+    right: 1.1rem;
+    top: 35rem;
+    display: none;
+    transition: transform .6s ease;
+    animation: displayBtn .4s ease;
+    z-index: 10000;
+}
+
+.back__to-top:hover {
+    transform: scale(1.15);
+}
+
+.back__to-top.show {
+    display: block;
+    animation: displayBtn .5s ease;
+}
+
+@keyframes displayBtn {
+    from  {
+        opacity: 0;
+        transform: translateX(1.5rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,60 @@
+.insurance__packages-section {
+    background-color: var(--light-gray-bg);
+    margin-bottom: clamp(4rem, 2.5915rem + 6.0094vw, 8rem);
+    padding: clamp(3.5rem, 2.6197rem + 3.7559vw, 6rem) var(--general-padding-l-r);
+}
+
+.insurance__packages-heading {
+    text-align: center;
+}
+
+.insurance__packages-title {
+    font-weight: 700;
+    font-size: clamp(2rem, 1.4718rem + 2.2535vw, 3.5rem);
+    margin-bottom: clamp(1.3rem, 1.0535rem + 1.0516vw, 2rem);
+}
+
+.sub__head-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .55rem;
+}
+
+.home__text {
+    color: rgba(0, 0, 0, .5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--general-fs);
+    font-weight: 500;
+}
+
+.sub__head-nav-logo {
+    color: rgba(0, 0, 0, .7);
+    font-size: var(--general-fs);
+}
+
+.current__page {
+    color: var(--green-primary);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--general-fs);
+}
+
+
+
+
+
+
+/* INSURANCE PRODUCTS */
+
+.bottom__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(18rem, 12.0141rem + 25.5399vw, 35rem), 1fr));
+    gap: 2rem;
+}
+
+.boxes img {
+    border-radius: var(--pic-br);
+    margin-bottom: 1.5rem;
+}
+

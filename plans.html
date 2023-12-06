@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png/ico" href="./public/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index-home-page-styles/header.css">
+    <link rel="stylesheet" href="./plans-styles/plans-heading.css">
+    <link rel="stylesheet" href="./plans-styles/plans-body.css">
+    <link rel="stylesheet" href="./index-home-page-styles/faq.css">
+    <link rel="stylesheet" href="./index-home-page-styles/footer.css">
+    <link rel="stylesheet" href="../style-components/styles.css">
+    <link rel="stylesheet" href="../style-components/css-resets.css">
+    <script src="./src/plans.js" defer></script>
+    <title>Protega Insurance | Insurance Plans</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html">
+            <img src="./public/protega-insurance-green-logo-transparent-bg.png" alt="" class="header__image-logo">
+        </a>
+        <div class="header__nav-container">
+            <nav class="header__navs" id="header__navs">
+                <a href="./index.html" class="header__link header__nav-link">Home</a>
+                <a href="./about.html" class="header__link header__nav-link">About</a>
+                <div class="insurance__wrapper" id="insurance__wrapper">
+                    <a href="" class="header__link header__nav-link">Insurance</a>
+                    <i class="bi bi-chevron-down" id="chevronDown"></i>
+                </div>
+                <div class="insurance__dropdown-menu" id="insurance__dropdown-menu">
+                    <div class="animal__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/dog-dropdown-image.png" alt=""> -->
+                            Pet Insurance
+                        </a>
+                    </div>
+                    <div class="health__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/head-dropdown-image.png" alt=""> -->
+                            Health Insurance
+                        </a>
+                    </div>
+                    <div class="car__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Car Insurance
+                        </a>
+                    </div>
+                    <div class="life__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Life Insurance
+                        </a>
+                    </div>
+                    <div class="Business__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Business Insurance
+                        </a>
+                    </div>
+                    <div class="property__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Property Insurance
+                        </a>
+                    </div>
+                    <div class="travel__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Travel Insurance
+                        </a>
+                    </div>
+                    <div class="disability__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Disability Insurance
+                        </a>
+                    </div>
+                </div>
+                <a href="./plans.html" class="header__link header__nav-link active">Plans</a>
+                <a href="./contact.html" class="header__link header__nav-link">Contact</a>
+            </nav>
+        </div>
+        <div class="header__inner-wrapper">
+            <a href="./plans.html">
+                <button type="button" class="header__btn">Get Insurance</button>
+            </a>
+            <div class="hamburger__menu" id="hamburger__menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <button type="button" class="back__to-top" id="back__to-top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+
+        <section class="plans__intro-section">
+            <div class="plans__heading">
+                <h2 class="plans__title">Our Insurance Plans</h2>
+                <div class="sub__head-nav">
+                    <a href="./index.html">
+                        <p class="home__text">Plans</p>
+                    </a>
+                    <i class="bi bi-chevron-right sub__head-nav-logo"></i>
+                    <a href="./about.html">
+                        <p class="current__page">Insurance plans</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="plans__body">
+            <div class="plans__text-wrapper">
+                <p class="plans__mini-title">Plans And Prices</p>
+                <h2 class="plans__body-title">Find A Plan That Works For You</h2>
+                <p class="plans__description">
+                    Here, you will find comprehensive information on our insurance plans and pricing. Whether you're a homeowner, or a business owner, we have the perfect plan for you. Explore and select the best plan that aligns with your needs and budget. You may consider taking advantage of our group purchasing power, specially negotiated, and insurance specialists who are ready to personally assist you.
+                </p>
+            </div>
+            <div class="plans__container">
+                <div class="first__plan">
+                    <div class="first__plan-top">
+                        <p class="first__plan-name">Basic</p>
+                        <p class="first__plan-description">
+                            This plan is suitable for those who only need minimal coverage. It provides basic coverage and lower monthly premiums.
+                        </p>
+                        <div class="first__plan-price-container">
+                            <p class="first__plan-price">$25</p>
+                            <span>/month</span>
+                        </div>
+                        <!-- <div class="coupon__save">
+                            <i class="bi bi-scissors coupon__save-icon"></i>
+                            <p class="coupon__save-text">EGDPROTEGA09</p>
+                        </div> -->
+                        <a href="">
+                            <button type="button" class="plan__btn">Get Started</button>
+                        </a>
+                        <p class="renews__text">
+                            You pay $25 - renews at $50/year
+                        </p>
+                    </div>
+                    <div class="plan-divider"></div>
+                    <div class="first__plan-bottom">
+                        <div class="first__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="first__plan-bottom-text">
+                                Accidental Death and Dismemberment (AD&D) coverage up to $10,000
+                            </p>
+                        </div>
+                        <div class="first__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="first__plan-bottom-text">
+                                In-Network Out-of-Pocket Maximum: $4,500 (per person)
+                            </p>
+                        </div>
+                        <div class="first__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="first__plan-bottom-text">
+                                In-network Emergency Room (ER) visits for a maximum of $2,500 per calendar year
+                            </p>
+                        </div>
+                        <div class="first__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="first__plan-bottom-text">
+                                Out-of-network ER visits for a maximum of $2,500 per calendar year
+                            </p>
+                        </div>
+                        <div class="first__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="first__plan-bottom-text">
+                                Annual Deductible: $1,000
+                            </p>
+                        </div>
+                        <div class="first__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="first__plan-bottom-text">
+                                Wellness Incentives: 50% discount for participation in approved programs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="second__plan">
+                    <div class="second__plan-top">
+                        <!-- <div class="popular__wrapper">
+                            <p class="popular__text">Popular</p>
+                            <i class="fa-solid fa-award popular__icon"></i>
+                        </div> -->
+                        <p class="second__plan-name">Standard</p>
+                        <p class="second__plan-description">
+                            The standard plan offers more comprehensive coverage and includes a broader range of services. It is ideal for those seeking moderate coverage.
+                        </p>
+                        <div class="second__plan-price-container">
+                            <p class="second__plan-price">$45</p>
+                            <span>/month</span>
+                        </div>
+                        <!-- <div class="coupon__save">
+                                            <i class="bi bi-scissors coupon__save-icon"></i>
+                                            <p class="coupon__save-text">EGDPROTEGA09</p>
+                                        </div> -->
+                        <a href="">
+                            <button type="button" class="plan__btn">Get Started</button>
+                        </a>
+                        <p class="renews__text">
+                            You pay $45 - renews at $90/year
+                        </p>
+                    </div>
+                    <div class="plan-divider"></div>
+                    <div class="second__plan-bottom">
+                        <div class="second__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="second__plan-bottom-text">
+                                Accidental Death and Dismemberment (AD&D) coverage up to $25,000
+                            </p>
+                        </div>
+                        <div class="second__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="second__plan-bottom-text">
+                                In-Network Out-of-Pocket Maximum: $6,000 (per person)
+                            </p>
+                        </div>
+                        <div class="second__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="second__plan-bottom-text">
+                                In-network Emergency Room (ER) visits for a maximum of $10,000 per calendar year
+                            </p>
+                        </div>
+                        <div class="second__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="second__plan-bottom-text">
+                                Out-of-network ER visits for a maximum of $10,000 per calendar year
+                            </p>
+                        </div>
+                        <div class="second__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="second__plan-bottom-text">
+                                Annual Deductible: $1,500
+                            </p>
+                        </div>
+                        <div class="second__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="second__plan-bottom-text">
+                                In-network Physician visits for a maximum of $2,500 per calendar year
+                            </p>
+                        </div>
+                        <div class="second__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="second__plan-bottom-text">
+                                Out-of-network Physician visits for a maximum of $2,500 per calendar year
+                            </p>
+                        </div>
+                        <div class="second__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="second__plan-bottom-text">
+                                Additional Covered Benefits: HSA, Maternity, Newborn Care, Pediatric Care, Preventive Services, Urgent Care
+                            </p>
+                        </div>
+                        <div class="second__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="second__plan-bottom-text">
+                                Annual Preventive Services: 100% covered
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="third__plan">
+                    <div class="third__plan-top">
+                        <p class="third__plan-name">Advanced</p>
+                        <p class="third__plan-description">
+                            This plan offers comprehensive coverage with higher out-of-pocket maximums. It is suitable for those who require a high level of coverage and additional benefits.
+                        </p>
+                        <div class="third__plan-price-container">
+                            <p class="third__plan-price">$75</p>
+                            <span>/month</span>
+                        </div>
+                        <!-- <div class="coupon__save">
+                                                            <i class="bi bi-scissors coupon__save-icon"></i>
+                                                            <p class="coupon__save-text">EGDPROTEGA09</p>
+                                                        </div> -->
+                        <a href="">
+                            <button type="button" class="plan__btn">Get Started</button>
+                        </a>
+                        <p class="renews__text">
+                            You pay $75 - renews at $150/year
+                        </p>
+                    </div>
+                    <div class="plan-divider"></div>
+                    <div class="third__plan-bottom">
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                Accidental Death and Dismemberment (AD&D) coverage up to $50,000
+                            </p>
+                        </div>
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                In-Network Out-of-Pocket Maximum: $7,500 (per person)
+                            </p>
+                        </div>
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                In-network Emergency Room (ER) visits for a maximum of $15,000 per calendar year
+                            </p>
+                        </div>
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                Out-of-network ER visits for a maximum of $15,000 per calendar year
+                            </p>
+                        </div>
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                Annual Deductible: $2,000
+                            </p>
+                        </div>
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                In-network Physician visits for a maximum of $10,000 per calendar year
+                            </p>
+                        </div>
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                Out-of-network Physician visits for a maximum of $10,000 per calendar year
+                            </p>
+                        </div>
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                Preventive Care Package, including mammograms, prostate exams, and well-child visits
+                            </p>
+                        </div>
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                Annual Preventive Services: 100% covered
+                            </p>
+                        </div>
+                        <div class="third__plan-bottom-content">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="third__plan-bottom-text">
+                                Primary Care Provider (PCP) Annual Wellness Visit: $0 copay
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="plans__bottom-text">
+                To receive personalized/custom quotes based on your specific needs and budget, feel free to 
+                <a href="./contact.html">Contact our Agents</a>
+            </p>
+        </section>
+
+        <section class="faq__section">
+            <div class="faq__heading">
+                <p class="faq__mini-title">Frequently Asked Questions</p>
+                <h2 class="faq__title">
+                    You Have Questions, We Have Answers
+                </h2>
+            </div>
+            <div class="faq__boxes-container-accordion">
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            Application for a health insurance plan?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div> 
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                The requirements for applying for a health insurance plan can vary depending on the specific plan. However, the following information is generally required for application:
+                            </p>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Basic personal information, such as name, address, date of birth, and social security number
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Details about the insured person(s), including age, gender, height, weight, tobacco use, and medical history
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Details about the coverage desired, such as deductibles, copayments, and specific benefits or procedures covered
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Billing information, including mailing address and method of payment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            How can I lower my health insurance premiums?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                There are several ways to lower your health insurance premiums. Here are some strategies you can consider:
+                            </p>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Quit smoking: Smoking can significantly increase your health insurance premiums. If you're a smoker, quitting can have a
+                                    significant impact on your costs.
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Maintain a healthy weight: Obesity can also increase your health insurance premiums. If you're overweight, working to
+                                    lose weight can help reduce your premiums.
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Enroll in a high-deductible health plan (HDHP): HDHPs often have lower premiums but higher out-of-pocket costs. By
+                                    choosing this option, you can potentially save money on your health insurance premiums.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            What happens if I need medical treatment while abroad?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                If you need medical treatment while abroad, it's essential to consider your insurance coverage and
+                                the extent of the benefits provided.
+                            </p>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    We offer international health insurance plans, which cover medical expenses
+                                    incurred while traveling abroad. These plans may have deductibles and copayments similar to domestic
+                                    plans, and the coverage provided can vary widely depending on the specific plan.
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Depending on your insurance plan and the country you're visiting, you may be responsible for some
+                                    or all of the out-of-pocket costs associated with your medical treatment. Be sure to review your policy benefits and
+                                    consult with us before traveling.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            Are there penalties for lack of health insurance in the United States?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                The penalty for not having health insurance in the United States can be steep. According to the Affordable Care Act
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            How can I check the coverage of my insurance policy?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                You can check the coverage of your insurance policy by referring to the policy documents you received through mail or contacting our customer care. If you have a comprehensive insurance policy, it should cover most, if not all, expenses related to a covered
+                                incident. However, if you have a limited or exclusive policy, the coverage may be more specific. For example, a limited
+                                policy may only cover the insured person, while an exclusive policy may cover only a specific event or set of events.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            Can I transfer my insurance policy to another insurance company?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                Yes, you can transfer your insurance policy to another insurance company, but this process may involve certain risks and
+                                costs. Some insurance companies may charge a premium transfer fee, which can be based on the amount of time the policy
+                                has been in force, the amount of premiums paid, or a combination of these factors. Additionally, transferring a policy
+                                to another insurance company may require you to undergo a new medical examination, depending on the policy and the new
+                                insurance company's requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="cant__find">Can't find an answer?
+                <a href="./contact.html">Contact Us</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="logo__cta">
+                <div class="footer__logo-text-wrapper">
+                    <a href="/index.html">
+                        <img src="./public/protega-insurance-green-logo-transparent-bg.png" alt="" class="footer__image-logo">
+                    </a>
+                    <p class="footer__container-text">
+                        We are an award winning insurance provider. Established in 2017, we have years of experience. Get started with your insurance today.
+                    </p>
+                </div>
+                <form class="footer__form">
+                    <input type="email" name="email" class="footer__email-input" placeholder="Enter Your Email Address" required
+                        autocomplete="email">
+                    <button type="submit" class="footer__btn">Get A Quote</button>
+                </form>
+            </div>
+            <div class="links__container">
+                <div class="quick__links-wrapper">
+                    <p class="link__item-header">Quick Links</p>
+                    <a href="./index.html" class="footer__nav-link">Home</a>
+                    <a href="./about.html" class="footer__nav-link">About</a>
+                    <a href="./plans.html" class="footer__nav-link">Plans/Prices</a>
+                    <a href="./contact.html" class="footer__nav-link">Contact</a>
+                </div>
+                <div class="insurance__links-wrapper">
+                    <p class="link__item-header">Insurance</p>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Health Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Auto Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Pet Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Business Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Property Insurance</a>
+                </div>
+                <div class="additional__insurance-links-wrapper">
+                    <p class="link__item-header">Additional Insurance</p>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Overseas Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Travel Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Umbrella Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Jewelry Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Event Insurance</a>
+                </div>
+                <div class="legal-security__links-wrapper">
+                    <p class="link__item-header">Legal & Security</p>
+                    <a href="./legal-security.html" class="footer__nav-link">Privacy</a>
+                    <a href="./legal-security.html" class="footer__nav-link">Terms of Use</a>
+                    <a href="./legal-security.html" class="footer__nav-link">Security</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="social__links">
+            <a href="https://facebook.com/protega-insurance" target="_blank" class="footer__social-link" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/message/JX7SD5WNL4EQG1" target="_blank" class="footer__social-link" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://twitter.com/protega_insurance" target="_blank" class="footer__social-link" title="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com/protega-insurance" target="_blank" class="footer__social-link" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <div class="footer__divider"></div>
+        <p class="footer__copyright">&copy; 2017-<span id="year"></span> Protega Insurance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

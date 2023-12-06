@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png/ico" href="./public/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./index-home-page-styles/header.css">
+    <link rel="stylesheet" href="./index-home-page-styles/hero.css">
+    <link rel="stylesheet" href="./index-home-page-styles/service-holders.css">
+    <link rel="stylesheet" href="./index-home-page-styles/insurance-products.css">
+    <link rel="stylesheet" href="./index-home-page-styles/benefits-promise-section.css">
+    <link rel="stylesheet" href="./index-home-page-styles/insurance-steps.css">
+    <link rel="stylesheet" href="./index-home-page-styles/testimonials.css">
+    <link rel="stylesheet" href="./index-home-page-styles/faq.css">
+    <link rel="stylesheet" href="./index-home-page-styles/footer.css">
+    <link rel="stylesheet" href="../style-components/styles.css">
+    <link rel="stylesheet" href="../style-components/css-resets.css">
+    <script src="./src/index.js" defer></script>
+    <title>Protega Insurance</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html">
+            <img src="./public/protega-insurance-green-logo-transparent-bg.png" alt=""
+            class="header__image-logo">
+        </a>
+        <div class="header__nav-container">
+            <nav class="header__navs" id="header__navs">
+                <a href="./index.html" class="header__link header__nav-link active">Home</a>
+                <a href="./about.html" class="header__link header__nav-link">About</a>
+                <div class="insurance__wrapper" id="insurance__wrapper">
+                    <a href="" class="header__link header__nav-link">Insurance</a>
+                    <i class="bi bi-chevron-down" id="chevronDown"></i>
+                </div>
+                <div class="insurance__dropdown-menu" id="insurance__dropdown-menu">
+                    <div class="animal__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/dog-dropdown-image.png" alt=""> -->
+                            Pet Insurance
+                        </a>
+                    </div>
+                    <div class="health__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/head-dropdown-image.png" alt=""> -->
+                            Health Insurance
+                        </a>
+                    </div>
+                    <div class="car__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Car Insurance
+                        </a>
+                    </div>
+                    <div class="life__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Life Insurance
+                        </a>
+                    </div>
+                    <div class="Business__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Business Insurance
+                        </a>
+                    </div>
+                    <div class="property__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Property Insurance
+                        </a>
+                    </div>
+                    <div class="travel__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Travel Insurance
+                        </a>
+                    </div>
+                    <div class="disability__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Disability Insurance
+                        </a>
+                    </div>
+                </div>
+                <a href="./plans.html" class="header__link header__nav-link">Plans</a>
+                <a href="./contact.html" class="header__link header__nav-link">Contact</a>
+            </nav>
+        </div>
+        <div class="header__inner-wrapper">
+            <a href="./plans.html">
+                <button type="button" class="header__btn">Get Insurance</button>
+            </a>
+            <div class="hamburger__menu" id="hamburger__menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <button type="button" class="back__to-top" id="back__to-top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+        <section class="hero__section">
+            <div class="hero__text-wrapper">
+                <p class="hero__mini-title">
+                    What We Offer
+                </p>
+                <h1 class="hero__title">
+                    Maintain peace of mind with our comprehensive coverage
+                </h1>
+                <form class="hero__form">
+                    <input type="email" name="email" class="hero__email-input" placeholder="Enter Your Email Address" required autocomplete="email">
+                    <button type="submit" class="hero__btn">Get A Quote</button>
+                </form>
+                <div class="coverage__container">
+                    <div class="coverage__wrapper coverage1">
+                        <p class="amount">$100k</p>
+                        <p class="text">Upto Coverage</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="coverage__wrapper">
+                        <p class="amount">80k+</p>
+                        <p class="text">Happy Clients Insured</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./public/hero-image.jpg" alt="" class="hero__image">
+        </section>
+
+        <section class="our__holders-section">
+            <p class="holders__text">Our Service Holders</p>
+            <div class="carousel__wrapper">
+                <div>
+                    <span>
+                        <img src="./public/ourholders1.svg" alt="">
+                    </span>
+                    <span>
+                        <img src="./public/ourholders2.svg" alt="">
+                    </span>
+                    <span>
+                        <img src="./public/ourholders3.svg" alt="">
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="./public/ourholders4.svg" alt="">
+                    </span>
+                    <span>
+                        <img src="./public/ourholders5.svg" alt="">
+                    </span>
+                    <span>
+                        <img src="./public/ourholders3.svg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="carousel__controls">
+                <button type="button" id="prevBtn">
+                    <i class="bi bi-chevron-left nav__icon"></i>
+                </button>
+                <button type="button" id="nextBtn">
+                    <i class="bi bi-chevron-right nav__icon"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="insurance__products-section">
+            <div class="top">
+                <div class="top__text">
+                    <p class="insurance__products-section-mini-title">
+                        Insurance Products
+                    </p>
+                    <h2 class="insurance__products-section-title">
+                        Wide range of insurance products, customized to suit your needs.
+                    </h2>
+                    <p class="top__p">
+                        Insurance products play a crucial role in the financial stability of individuals and businesses. At <span>Protega Insurance</span>, we provide our clients with comprehensive insurance coverage, we offer a wide range of products, including:
+                    </p>
+                </div>
+                <a href="./insurance-packages.html">
+                    <button type="button" class="insurance__products-section-btn">
+                        View All Insurances
+                    </button>
+                </a>
+            </div>
+            <div class="bottom">
+                <div class="bottom__box1 box">
+                    <i class="bi bi-arrow-right bottom__icon"></i>
+                    <h4 class="bottom__title">Health Insurance</h4>
+                    <p class="bottom__description">
+                        Protect your family from the financial burden of medical expenses by offering comprehensive health insurance
+                        coverage.
+                    </p>
+                    <a href="./insurance-packages.html" class="bottom__btn">Learn More</a>
+                </div>
+                <div class="bottom__box1 box">
+                    <i class="bi bi-arrow-right bottom__icon"></i>
+                    <h4 class="bottom__title">Business Insurance</h4>
+                    <p class="bottom__description">
+                        Ensure the continuity and success of your business by offering a comprehensive range of business insurance policies,
+                        including property insurance, liability insurance, and more.
+                    </p>
+                    <a href="./insurance-packages.html" class="bottom__btn">Learn More</a>
+                </div>
+                <div class="bottom__box2 box">
+                    <i class="bi bi-arrow-right bottom__icon"></i>
+                    <h4 class="bottom__title">Pet Insurance</h4>
+                    <p class="bottom__description">
+                        Invest in the health and well-being of your pets by offering comprehensive pet insurance coverage.
+                    </p>
+                    <a href="./insurance-packages.html" class="bottom__btn">Learn More</a>
+                </div>
+                <div class="bottom__box3 box">
+                    <i class="bi bi-arrow-right bottom__icon"></i>
+                    <h4 class="bottom__title">Car Insurance</h4>
+                    <p class="bottom__description">
+                        Ensure the safety and security of your vehicle by covering potential damages, medical expenses, and legal liabilities
+                        resulting from accidents.
+                    </p>
+                    <a href="./insurance-packages.html" class="bottom__btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits__promise-section">
+            <div class="benefits">
+                <img src="./public/benefits.jpg" alt="" class="benefit__image">
+                <div class="benefits__text-wrapper">
+                    <p class="benefits__mini-title">
+                        Benefits of Insurance
+                    </p>
+                    <h2 class="benefits__title">
+                        Smart Insurance For A Happier Life
+                    </h2>
+                    <p class="benefits__description">
+                        We understand the importance of offering reliable insurance products/services that protect your assets and
+                        safeguard your financial future.
+                    </p>
+                    <div class="benefits__list-wrapper">
+                        <div class="benefits__list-text text1">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="benefits__text">
+                                We provide comprehensive protection with our insurance coverage.
+                            </p>
+                        </div>
+                        <div class="benefits__list-text text2">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="benefits__text">
+                                With tailored coverage options, our insurance plans provide you with peace of mind.
+                            </p>
+                        </div>
+                        <div class="benefits__list-text text3">
+                            <i class="bi bi-check2-circle"></i>
+                            <p class="benefits__text">
+                                The policies' ability to be customized to one's unique needs achieves a balance between cost and protection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promise">
+                <div class="promise__text-wrapper">
+                    <p class="promise__mini-title">
+                        What We Promise
+                    </p>
+                    <h2 class="promise__title">
+                        Our Assurance To Every Client
+                    </h2>
+                    <div class="promise__list-wrapper">
+                        <div class="promise__list-text">
+                            <div class="head">
+                                <i class="bi bi-check2-circle"></i>
+                                <p class="head__content">
+                                    Protection Against Financial Losses
+                                </p>
+                            </div>
+                            <p class="promise__list-text-body">
+                                We provide policies that cover a wide range of financial losses, including accidents, theft, or damage to property.
+                            </p>
+                        </div>
+                        <div class="promise__list-text">
+                            <div class="head">
+                                <i class="bi bi-check2-circle"></i>
+                                <p class="head__content">
+                                    Timely Payments
+                                </p>
+                            </div>
+                            <p class="promise__list-text-body">
+                                We guarantee timely payment of claims to ensure prompt financial assistance in
+                                emergencies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./public/promise.jpg" alt="" class="promise__image">
+            </div>
+        </section>
+
+        <section class="insurance__steps">
+            <div class="title__wrapper">
+                <p class="insurance__steps-mini-title">
+                    Our Process
+                </p>
+                <h2 class="insurance__steps-title">
+                    We Help You Get Covered In Just <span>3 Easy Steps</span>
+                </h2>
+            </div>
+            <div class="steps__wrapper">
+                <div class="step">
+                    <div class="step__head">
+                        <div class="icon__wrapper">
+                            <img src="./public/quotation.svg" alt="" class="insurance__step-icon">
+                        </div>
+                        <span class="num">01</span>
+                    </div>
+                    <div class="steps__divider"></div>
+                    <div class="step__content">
+                        <h4 class="step__content-title">
+                            Get A Quotation
+                        </h4>
+                        <p class="step__content-body">
+                            Provide your email address. Check the provided details and ensure accuracy as you will receive confidential information, then click on the "Get A Quote" button. 
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step__head">
+                        <div class="icon__wrapper">
+                            <img src="./public/complete-application.svg" alt="" class="insurance__step-icon">
+                        </div>
+                        <span class="num">02</span>
+                    </div>
+                    <div class="steps__divider"></div>
+                    <div class="step__content">
+                        <h4 class="step__content-title">
+                            Complete The Application
+                        </h4>
+                        <p class="step__content-body">
+                            Verify that all necessary information has been accurately entered in the application form sent to your email. If any inconsistencies are found, modify the information as needed. Once all the details have been confirmed and are accurate, click the "Complete Application" button. This will submit
+                            your application for review and processing.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step__head">
+                        <div class="icon__wrapper">
+                            <img src="./public/get-insured.svg" alt="" class="insurance__step-icon">
+                        </div>
+                        <span class="num">03</span>
+                    </div>
+                    <div class="steps__divider"></div>
+                    <div class="step__content">
+                        <h4 class="step__content-title">
+                            Get Unwavered Coverage
+                        </h4>
+                        <p class="step__content-body">
+                            Once your application has been processed, you will receive a notification indicating that your insurance coverage has
+                            been activated.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials__section">
+            <div class="heading">
+                <p class="testimonial__mini-title">Testimonials</p>
+                <h2 class="testimonial__title">
+                    What People Say About Us
+                </h2>
+            </div>
+            <div class="testimonial__box-container">
+                <div class="testimonial__box box1">
+                    <img src="./public/testimonials4.jpg" alt="" class="testimonial__image">
+                    <div class="intro__wrapper">
+                        <div class="name__job-wrapper">
+                            <p class="client__name">Leslie Alexander</p>
+                            <p class="client__job">Communications Director</p>
+                        </div>
+                        <div class="rating__wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <p class="rating__num">3.9</p>
+                        </div>
+                    </div>
+                    <div class="testimonial__divider"></div>
+                    <p class="testimonial__content">
+                        We couldn't have imagined a better experience with an insurance company. Their policy has been reliable and we
+                        have
+                        received excellent customer service!
+                    </p>
+                </div>
+                <div class="testimonial__box box2">
+                    <img src="./public/testimonials2.jpg" alt="" class="testimonial__image">
+                    <div class="intro__wrapper">
+                        <div class="name__job-wrapper">
+                            <p class="client__name">Bright Simmons</p>
+                            <p class="client__job">Sales Manager</p>
+                        </div>
+                        <div class="rating__wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <p class="rating__num">4.5</p>
+                        </div>
+                    </div>
+                    <div class="testimonial__divider"></div>
+                    <p class="testimonial__content">
+                        When our house was damaged due to a storm, we knew we could rely on Protega Insurance for a swift and efficient
+                        claims
+                        process. We are very satisfied with their services.
+                    </p>
+                </div>
+                <div class="testimonial__box box3">
+                    <img src="./public/testimonials3.jpg" alt="" class="testimonial__image">
+                    <div class="intro__wrapper">
+                        <div class="name__job-wrapper">
+                            <p class="client__name">Lora Khabum</p>
+                            <p class="client__job">Public Relations Specialist</p>
+                        </div>
+                        <div class="rating__wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <p class="rating__num">4.0</p>
+                        </div>
+                    </div>
+                    <div class="testimonial__divider"></div>
+                    <p class="testimonial__content">
+                        Our auto insurance with Protega Insurance has been great. They have provided us with fair and accurate quotes,
+                        and their customer service is second to none.
+                    </p>
+                </div>
+            </div>
+            <a href="./testimonials.html" class="testimonial__btn">
+                <p>View More</p>
+                <i class="bi bi-arrow-right testimonial__icon"></i>
+            </a>
+        </section>
+
+        <section class="faq__section">
+            <div class="faq__heading">
+                <p class="faq__mini-title">Frequently Asked Questions</p>
+                <h2 class="faq__title">
+                    You Have Questions, We Have Answers
+                </h2>
+            </div>
+            <div class="faq__boxes-container-accordion">
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            Application for a health insurance plan?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div> 
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                The requirements for applying for a health insurance plan can vary depending on the specific plan. However, the following information is generally required for application:
+                            </p>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Basic personal information, such as name, address, date of birth, and social security number
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Details about the insured person(s), including age, gender, height, weight, tobacco use, and medical history
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Details about the coverage desired, such as deductibles, copayments, and specific benefits or procedures covered
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Billing information, including mailing address and method of payment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            How can I lower my health insurance premiums?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                There are several ways to lower your health insurance premiums. Here are some strategies you can consider:
+                            </p>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Quit smoking: Smoking can significantly increase your health insurance premiums. If you're a smoker, quitting can have a
+                                    significant impact on your costs.
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Maintain a healthy weight: Obesity can also increase your health insurance premiums. If you're overweight, working to
+                                    lose weight can help reduce your premiums.
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Enroll in a high-deductible health plan (HDHP): HDHPs often have lower premiums but higher out-of-pocket costs. By
+                                    choosing this option, you can potentially save money on your health insurance premiums.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            What happens if I need medical treatment while abroad?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                If you need medical treatment while abroad, it's essential to consider your insurance coverage and
+                                the extent of the benefits provided.
+                            </p>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    We offer international health insurance plans, which cover medical expenses
+                                    incurred while traveling abroad. These plans may have deductibles and copayments similar to domestic
+                                    plans, and the coverage provided can vary widely depending on the specific plan.
+                                </p>
+                            </div>
+                            <div class="faq__box-accordion-text-list">
+                                <i class="bi bi-dot"></i>
+                                <p>
+                                    Depending on your insurance plan and the country you're visiting, you may be responsible for some
+                                    or all of the out-of-pocket costs associated with your medical treatment. Be sure to review your policy benefits and
+                                    consult with us before traveling.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            Are there penalties for lack of health insurance in the United States?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                The penalty for not having health insurance in the United States can be steep. According to the Affordable Care Act
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            How can I check the coverage of my insurance policy?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                You can check the coverage of your insurance policy by referring to the policy documents you received through mail or contacting our customer care. If you have a comprehensive insurance policy, it should cover most, if not all, expenses related to a covered
+                                incident. However, if you have a limited or exclusive policy, the coverage may be more specific. For example, a limited
+                                policy may only cover the insured person, while an exclusive policy may cover only a specific event or set of events.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__box-accordion-item">
+                    <div class="faq__box-accordion-item-header">
+                        <p class="faq__box-accordion-title">
+                            Can I transfer my insurance policy to another insurance company?
+                        </p>
+                        <i class="bi bi-chevron-up faq__header-icon"></i>
+                    </div>
+                    <div class="faq__box-accordion-item-body">
+                        <div class="faq__box-accordion-item-body-content">
+                            <p class="faq__box-accordion-text">
+                                Yes, you can transfer your insurance policy to another insurance company, but this process may involve certain risks and
+                                costs. Some insurance companies may charge a premium transfer fee, which can be based on the amount of time the policy
+                                has been in force, the amount of premiums paid, or a combination of these factors. Additionally, transferring a policy
+                                to another insurance company may require you to undergo a new medical examination, depending on the policy and the new
+                                insurance company's requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="cant__find">Can't find an answer?
+                <a href="./contact.html">Contact Us</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="logo__cta">
+                <div class="footer__logo-text-wrapper">
+                    <a href="/index.html">
+                        <img src="./public/protega-insurance-green-logo-transparent-bg.png" alt="" class="footer__image-logo">
+                    </a>
+                    <p class="footer__container-text">
+                        We are an award winning insurance provider. Established in 2017, we have years of experience. Get started with your insurance today.
+                    </p>
+                </div>
+                <form class="footer__form">
+                    <input type="email" name="email" class="footer__email-input" placeholder="Enter Your Email Address" required
+                        autocomplete="email">
+                    <button type="submit" class="footer__btn">Get A Quote</button>
+                </form>
+            </div>
+            <div class="links__container">
+                <div class="quick__links-wrapper">
+                    <p class="link__item-header">Quick Links</p>
+                    <a href="./index.html" class="footer__nav-link">Home</a>
+                    <a href="./about.html" class="footer__nav-link">About</a>
+                    <a href="./plans.html" class="footer__nav-link">Plans/Prices</a>
+                    <a href="./contact.html" class="footer__nav-link">Contact</a>
+                </div>
+                <div class="insurance__links-wrapper">
+                    <p class="link__item-header">Insurance</p>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Health Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Auto Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Pet Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Business Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Property Insurance</a>
+                </div>
+                <div class="additional__insurance-links-wrapper">
+                    <p class="link__item-header">Additional Insurance</p>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Overseas Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Travel Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Umbrella Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Jewelry Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Event Insurance</a>
+                </div>
+                <div class="legal-security__links-wrapper">
+                    <p class="link__item-header">Legal & Security</p>
+                    <a href="./legal-security.html" class="footer__nav-link">Privacy</a>
+                    <a href="./legal-security.html" class="footer__nav-link">Terms of Use</a>
+                    <a href="./legal-security.html" class="footer__nav-link">Security</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="social__links">
+            <a href="https://facebook.com/protega-insurance" target="_blank" class="footer__social-link" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/message/JX7SD5WNL4EQG1" target="_blank" class="footer__social-link" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://twitter.com/protega_insurance" target="_blank" class="footer__social-link" title="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com/protega-insurance" target="_blank" class="footer__social-link" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <div class="footer__divider"></div>
+        <p class="footer__copyright">&copy; 2017-<span id="year"></span> Protega Insurance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

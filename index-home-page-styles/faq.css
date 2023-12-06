@@ -1,0 +1,113 @@
+.faq__section {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
+    padding: 0 var(--general-padding-l-r);
+    margin-bottom: clamp(4rem, 2.5915rem + 6.0094vw, 8rem);
+}
+
+.faq__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+}
+
+.faq__mini-title {
+    background-color: var(--mini-title-bg);
+    padding: var(--mini-title-padding-all);
+    font-size: var(--mini-title-fs);
+    font-weight: 500;
+    color: var(--mini-title-text-color);
+    width: var(--mini-title-width);
+}
+
+.faq__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 0.8775rem + 1.8028vw, 2.5rem);
+}
+
+.faq__boxes-container-accordion {
+    display: grid;
+    place-content: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, 16.1268rem + 16.5258vw, 31rem), 1fr)); */
+    gap: 1.5rem;
+}
+
+.faq__box-accordion-item {
+    border: .09rem solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    gap: clamp(0.9rem, 0.6887rem + 0.9014vw, 1.5rem);
+    padding: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+    transition: box-shadow .4s ease;
+}
+
+.faq__box-accordion-item:hover {
+    box-shadow: 0 5px 20px 1px rgba(0, 0, 0, .07);
+}
+
+.faq__box-accordion-item-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.faq__box-accordion-item-header.active > .faq__header-icon {
+    transform: rotate(180deg);
+}
+
+.faq__box-accordion-title {
+    font-weight: 600;
+    font-size: clamp(1rem, 0.8944rem + 0.4507vw, 1.3rem);
+}
+
+.faq__header-icon {
+    align-self: flex-start;
+    color: var(--green-primary);
+    font-size: clamp(1.2rem, 1.0592rem + 0.6009vw, 1.6rem);
+    transition: transform .4s ease;
+}
+
+.faq__box-accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+}
+
+.faq__box-accordion-item-body-content {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.5rem, 0.4296rem + 0.3005vw, 0.7rem);
+}
+
+.faq__box-accordion-item-body-content p {
+    color: #999;
+    font-size: var(--general-fs);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faq__box-accordion-text-list {
+    display: flex;
+    gap: .3rem;
+}
+
+.bi-dot {
+    align-self: flex-start;
+    font-size: 1.3rem;
+}
+
+.cant__find {
+    text-align: center;
+    font-size: clamp(1rem, 0.8592rem + 0.6009vw, 1.4rem);
+}
+
+.cant__find a {
+    color: var(--green-primary);
+    text-decoration: underline;
+}

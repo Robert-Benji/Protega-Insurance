@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png/ico" href="./public/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./index-home-page-styles/header.css">
+    <link rel="stylesheet" href="./contact-page-styles/contact-heading.css">
+    <link rel="stylesheet" href="./contact-page-styles/contact-body.css">
+    <link rel="stylesheet" href="./index-home-page-styles/footer.css">
+    <link rel="stylesheet" href="../style-components/styles.css">
+    <link rel="stylesheet" href="../style-components/css-resets.css">
+    <script src="./src/contact.js" defer></script>
+    <title>Protega Insurance | Contact</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html">
+            <img src="./public/protega-insurance-green-logo-transparent-bg.png" alt="" class="header__image-logo">
+        </a>
+        <div class="header__nav-container">
+            <nav class="header__navs" id="header__navs">
+                <a href="./index.html" class="header__link header__nav-link">Home</a>
+                <a href="./about.html" class="header__link header__nav-link">About</a>
+                <div class="insurance__wrapper" id="insurance__wrapper">
+                    <a href="" class="header__link header__nav-link">Insurance</a>
+                    <i class="bi bi-chevron-down" id="chevronDown"></i>
+                </div>
+                <div class="insurance__dropdown-menu" id="insurance__dropdown-menu">
+                    <div class="animal__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/dog-dropdown-image.png" alt=""> -->
+                            Pet Insurance
+                        </a>
+                    </div>
+                    <div class="health__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/head-dropdown-image.png" alt=""> -->
+                            Health Insurance
+                        </a>
+                    </div>
+                    <div class="car__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Car Insurance
+                        </a>
+                    </div>
+                    <div class="life__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Life Insurance
+                        </a>
+                    </div>
+                    <div class="Business__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Business Insurance
+                        </a>
+                    </div>
+                    <div class="property__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Property Insurance
+                        </a>
+                    </div>
+                    <div class="travel__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Travel Insurance
+                        </a>
+                    </div>
+                    <div class="disability__insurance dropdown">
+                        <a href="./insurance-packages.html" class="dropdown__wrapper">
+                            <!-- <img src="../public/car-dropdown-image.png" alt=""> -->
+                            Disability Insurance
+                        </a>
+                    </div>
+                </div>
+                <a href="./plans.html" class="header__link header__nav-link">Plans</a>
+                <a href="./contact.html" class="header__link header__nav-link active">Contact</a>
+            </nav>
+        </div>
+        <div class="header__inner-wrapper">
+            <a href="./plans.html">
+                <button type="button" class="header__btn">Get Insurance</button>
+            </a>
+            <div class="hamburger__menu" id="hamburger__menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <button type="button" class="back__to-top" id="back__to-top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+
+        <section class="contact__us-section">
+            <div class="contact__heading">
+                <h2 class="contact__title">Contact</h2>
+                <div class="sub__head-nav">
+                    <a href="./index.html">
+                        <p class="home__text">Home</p>
+                    </a>
+                    <i class="bi bi-chevron-right sub__head-nav-logo"></i>
+                    <a href="./about.html">
+                        <p class="current__page">Contact Us</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact__body-section">
+            <div class="contact__body-content">
+                <div class="contact__body-header">
+                    <h3 class="contact__body-header-title">Get in touch with us!</h3>
+                    <p class="contact__body-header-desc">
+                        We're here to help you with any questions regarding our products or services. We value your feedback and strive to provide the best customer service possible.
+                    </p>
+                </div>
+
+                <form action="https://formsubmit.co/robertbenjamin131@gmail.com" method="POST" class="form__container" id="form__container">
+                    <p class="form__container-header">
+                        Fill out the form below,
+                        and we'll respond as soon as possible.
+                    </p>
+
+                    <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html"> -->
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_subject" value="New contact form submission">
+
+                    <div class="full__name-wrapper">
+                        <div class="label__wrapper">
+                            <label for="full__name">Your full name</label>
+                            <small class="error__message1"></small>
+                        </div>
+                        <input type="text" name="name" id="full__name" class="full__name" required minlength="5">
+                        <i class="bi bi-person-fill full__name-icon"></i>
+                    </div>
+
+                    <div class="email__wrapper">
+                        <div class="label__wrapper">
+                            <label for="email">Your email address</label>
+                            <small class="error__message2"></small>
+                        </div>
+                        <input type="email" name="email" id="email" class="email" required>
+                        <i class="bi bi-envelope-fill email__icon"></i>
+                    </div>
+
+                    <div class="message__wrapper">
+                        <div class="label__wrapper">
+                            <label for="message">Message</label>
+                            <small class="error__message3"></small>
+                        </div>
+                        <textarea name="message" id="message" class="message" required minlength="30"></textarea>
+                    </div>
+
+                    <div class="consent__wrapper">
+                        <input type="checkbox" name="checkbox-consent" id="consent" value="consented" required>
+                        <label for="consent">I agree to the processing of my data according to the <a href="./legal-security.html">privacy policy</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form__btn" id="form__btn">Send Message</button>
+
+                    <p class="header__error-msg"></p>
+                </form>
+
+                <div class="our__addresses">
+                    <p class="our__address-header">Our Offices</p>
+
+                    <div class="address__card">
+                        <p class="headquaters">Headquaters</p>
+                        <p class="location">Germany</p>
+                        <div class="address__wrapper">
+                            <i class="bi bi-geo-alt-fill address__icon"></i>
+                            <p class="address">
+                                Tucholskystraße 2, 10117 Berlin, Germany
+                            </p>
+                        </div>
+
+                        <div class="phone__number-wrapper">
+                            <i class="bi bi-telephone-fill address__icon"></i>
+                            <p class="phone__number">
+                                <a href="https://wa.me/message/JX7SD5WNL4EQG1">+49 05603 797090</a>
+                                (customer care chat)
+                            </p>
+                        </div>
+
+                        <div class="email__container">
+                            <i class="bi bi-envelope-fill address__icon"></i>
+                            <p class="email__address">
+                                <a href="mailto:example@email.com">example@email.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="address__card">
+                        <p class="location">USA</p>
+                        <div class="address__wrapper">
+                            <i class="bi bi-geo-alt-fill address__icon"></i>
+                            <p class="address">
+                                340 Main Street, Los Angeles, CA 90291, USA
+                            </p>
+                        </div>
+                    
+                        <div class="phone__number-wrapper">
+                            <i class="bi bi-telephone-fill address__icon"></i>
+                            <p class="phone__number">
+                                <a href="https://wa.me/message/JX7SD5WNL4EQG1">+1 (779) 206-5523</a>
+                                (customer care chat)
+                            </p>
+                        </div>
+                    
+                        <div class="email__container">
+                            <i class="bi bi-envelope-fill address__icon"></i>
+                            <p class="email__address">
+                                <a href="mailto:example@email.com">example@email.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="address__card">
+                        <p class="location">UK</p>
+                        <div class="address__wrapper">
+                            <i class="bi bi-geo-alt-fill address__icon"></i>
+                            <p class="address">
+                                Kensington, Cromwell Road, SW7, UK
+                            </p>
+                        </div>
+                    
+                        <div class="phone__number-wrapper">
+                            <i class="bi bi-telephone-fill address__icon"></i>
+                            <p class="phone__number">
+                                <a href="https://wa.me/message/JX7SD5WNL4EQG1">+44 7903 496932</a>
+                                (customer care chat)
+                            </p>
+                        </div>
+                    
+                        <div class="email__container">
+                            <i class="bi bi-envelope-fill address__icon"></i>
+                            <p class="email__address">
+                                <a href="mailto:example@email.com">example@email.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="logo__cta">
+                <div class="footer__logo-text-wrapper">
+                    <a href="/index.html">
+                        <img src="./public/protega-insurance-green-logo-transparent-bg.png" alt="" class="footer__image-logo">
+                    </a>
+                    <p class="footer__container-text">
+                        We are an award winning insurance provider. Established in 2017, we have years of experience. Get started with your insurance today.
+                    </p>
+                </div>
+                <form class="footer__form">
+                    <input type="email" name="email" class="footer__email-input" placeholder="Enter Your Email Address" required
+                        autocomplete="email">
+                    <button type="submit" class="footer__btn">Get A Quote</button>
+                </form>
+            </div>
+            <div class="links__container">
+                <div class="quick__links-wrapper">
+                    <p class="link__item-header">Quick Links</p>
+                    <a href="./index.html" class="footer__nav-link">Home</a>
+                    <a href="./about.html" class="footer__nav-link">About</a>
+                    <a href="./plans.html" class="footer__nav-link">Plans/Prices</a>
+                    <a href="./contact.html" class="footer__nav-link">Contact</a>
+                </div>
+                <div class="insurance__links-wrapper">
+                    <p class="link__item-header">Insurance</p>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Health Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Auto Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Pet Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Business Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Property Insurance</a>
+                </div>
+                <div class="additional__insurance-links-wrapper">
+                    <p class="link__item-header">Additional Insurance</p>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Overseas Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Travel Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Umbrella Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Jewelry Insurance</a>
+                    <a href="./insurance-packages.html" class="footer__nav-link">Event Insurance</a>
+                </div>
+                <div class="legal-security__links-wrapper">
+                    <p class="link__item-header">Legal & Security</p>
+                    <a href="./legal-security.html" class="footer__nav-link">Privacy</a>
+                    <a href="./legal-security.html" class="footer__nav-link">Terms of Use</a>
+                    <a href="./legal-security.html" class="footer__nav-link">Security</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="social__links">
+            <a href="https://facebook.com/protega-insurance" target="_blank" class="footer__social-link" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/message/JX7SD5WNL4EQG1" target="_blank" class="footer__social-link" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://twitter.com/protega_insurance" target="_blank" class="footer__social-link" title="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com/protega-insurance" target="_blank" class="footer__social-link" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <div class="footer__divider"></div>
+        <p class="footer__copyright">&copy; 2017-<span id="year"></span> Protega Insurance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

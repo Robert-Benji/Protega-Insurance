@@ -1,0 +1,224 @@
+.plans__body {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
+    margin-bottom: clamp(4rem, 2.5915rem + 6.0094vw, 8rem);
+    padding: 0 var(--general-padding-l-r);
+}
+
+.plans__text-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+}
+
+.plans__mini-title {
+    background-color: var(--mini-title-bg);
+    padding: var(--mini-title-padding-all);
+    font-size: var(--mini-title-fs);
+    font-weight: 500;
+    color: var(--mini-title-text-color);
+    width: var(--mini-title-width);
+}
+
+.plans__body-title {
+    font-weight: 700;
+    font-size: clamp(1.3rem, 0.8775rem + 1.8028vw, 2.5rem);
+    text-align: center;
+}
+
+.plans__description {
+    color: #999;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--general-fs);
+    max-width: 63rem;
+}
+
+.plans__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+}
+
+.first__plan,
+.second__plan,
+.third__plan {
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .1);
+    background-color: var(--white);
+    border: .05rem solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    padding: clamp(1.2rem, 1.0944rem + 0.4507vw, 1.5rem);
+}
+
+.first__plan-top,
+.second__plan-top,
+.third__plan-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* .popular__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    padding: .3rem;
+}
+
+.popular__text {
+    align-self: flex-start;
+    color: var(--green-primary);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+.popular__icon {
+    color: var(--green-primary);
+    align-self: center;
+    font-size: clamp(1.3rem, 1.2648rem + 0.1502vw, 1.4rem);
+} */
+
+.first__plan-name,
+.second__plan-name,
+.third__plan-name {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+}
+
+.first__plan-description,
+.second__plan-description,
+.third__plan-description {
+    color: #999;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--general-fs);
+    text-align: center;
+    /* max-width: 60rem; */
+}
+
+.first__plan-price-container,
+.second__plan-price-container,
+.third__plan-price-container {
+    display: flex;
+    align-items: center;
+}
+
+.first__plan-price,
+.second__plan-price,
+.third__plan-price {
+    font-weight: 500;
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+}
+
+.first__plan-price-container span
+.second__plan-price-container span,
+.third__plan-price-container span {
+    align-self: flex-end;
+    font-weight: initial;
+    font-size: initial;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .coupon__save {
+    border: .08rem solid var(--green-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: .6rem;
+    padding: .35rem .65rem;
+}
+
+.coupon__save-icon {
+    transform: rotate(90deg);
+    align-self: flex-start;
+    color: var(--green-primary);
+}
+
+.coupon__save-text {
+    align-self: center;
+    color: var(--green-primary);
+    font-size: .8rem;
+    font-weight: 500;
+} */
+
+.plan__btn {
+    background-color: var(--green-primary);
+    border: .15rem solid transparent;
+    color: var(--white);
+    cursor: pointer;
+    font-size: var(--general-fs);
+    font-weight: 600;
+    padding: .8rem 1.9rem;
+    /* padding: clamp(0.9rem, 0.7986rem + 0.4327vw, 1.188rem) clamp(1.5rem, 1.3018rem + 0.8458vw, 2.063rem); */
+    transition: all .5s ease;
+}
+
+.plan__btn:is(:hover, :active) {
+    border: .15rem solid var(--green-primary);
+    background-color: transparent;
+    color: var(--black);
+}
+
+.renews__text {
+    color: #999;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75rem;
+    /* font-size: clamp(0.85rem, 0.7972rem + 0.2254vw, 1rem); */
+}
+
+.plan-divider {
+    border: .04rem solid var(--border-color);
+}
+
+
+.first__plan-bottom,
+.second__plan-bottom,
+.third__plan-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.first__plan-bottom-content,
+.second__plan-bottom-content,
+.third__plan-bottom-content {
+    display: flex;
+    gap: .8rem;
+}
+
+.first__plan-bottom-content .bi-check2-circle,
+.second__plan-bottom-content .bi-check2-circle,
+.third__plan-bottom-content .bi-check2-circle {
+    align-self: flex-start;
+    color: var(--green-primary);
+    font-size: clamp(1.3rem, 1.2648rem + 0.1502vw, 1.4rem);
+}
+
+.first__plan-bottom-text,
+.second__plan-bottom-text,
+.third__plan-bottom-text {
+    align-self: center;
+    color: #999;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--general-fs);
+}
+
+.plans__bottom-text {
+    text-align: center;
+    font-size: clamp(1rem, 0.8592rem + 0.6009vw, 1.4rem);
+}
+
+.plans__bottom-text a {
+    color: var(--green-primary);
+    text-decoration: underline;
+}

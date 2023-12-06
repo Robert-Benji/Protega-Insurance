@@ -1,0 +1,213 @@
+body {
+    /* background-image: url('./public/application-form-bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top; */
+    background-color: var(--white-smoke);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__form-container {
+    padding: var(--general-padding-all);
+    max-width: 80rem;
+    /* max-width: 56.25rem; */
+    width: 100%;
+}
+
+.container__heading {
+    margin-bottom: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+}
+
+.container__heading h2 {
+    font-weight: 700;
+    font-size: clamp(1.6rem, 1.1775rem + 1.8028vw, 2.8rem);
+    margin-bottom: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+}
+
+.container__desc {
+    background-color: rgb(230, 243, 255);
+    border-radius: .3rem;
+    font-size: clamp(0.95rem, 0.8972rem + 0.2254vw, 1.1rem);
+    font-family: var(--ff2);
+    margin-bottom: clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+    padding: 1rem;
+}
+
+/* strong {
+    font-family: var(--ff);
+} */
+
+.container {
+    background-color: var(--white-smoke);
+    border-radius: .3rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+    padding: clamp(0.938rem, 0.6081rem + 1.4077vw, 1.875rem);
+}
+
+.section__title {
+    font-weight: 600;
+    font-size: clamp(1.2rem, 1.1648rem + 0.1502vw, 1.3rem);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.personal,
+.position,
+.edu__exp {
+    margin-bottom: 3.5rem;
+}
+
+.additional__info {
+    margin-bottom: 2rem;
+}
+
+/* .hiring__full-name,
+.hiring__email,
+.hiring__phone-number {
+    position: relative;
+}
+
+.hiring__full-name-icon,
+.hiring__email-icon,
+.hiring__phone-icon {
+    position: absolute;
+    bottom: 1.3rem;
+    right: .55rem;
+    font-size: 1.15rem;
+    color: #a5a5a5;
+} */
+
+.fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.input__field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: .15rem solid var(--border-color);
+    border-radius: 0;
+    background-color: transparent;
+    outline: none;
+    font-family: var(--ff2);
+    font-weight: 500;
+    font-size: clamp(0.85rem, 0.7972rem + 0.2254vw, 1rem);
+    padding: .8rem 1.5rem .8rem .4rem;
+    transition: all .5s ease;
+}
+
+input:focus {
+    border: .15rem solid var(--black);
+}
+
+input::placeholder {
+    font-family: var(--ff2);
+}
+
+input:is([type="date"], [type="file"]) {
+    color: #999;
+}
+
+input[type="checkbox"] {
+    padding: 0;
+    background-color: transparent;
+}
+
+label {
+    font-size: clamp(0.95rem, 0.8972rem + 0.2254vw, 1.1rem);
+    font-family: var(--ff2);
+    margin-bottom: .5rem;
+}
+
+.certify {
+    font-size: clamp(0.95rem, 0.8972rem + 0.2254vw, 1.1rem);
+    font-family: var(--ff2);
+}
+
+.additional__info-text {
+    color: #999;
+    font-size: .85rem;
+    font-family: var(--ff2);
+    margin-top: .5rem;
+}
+
+.error__message1,
+.error__message2,
+.error__message3,
+.error__message4,
+.error__message5,
+.error__message6,
+.error__message7,
+.error__message8,
+.error__message9,
+.error__message10,
+.error__message11,
+.error__message12,
+.error__message13,
+.error__message14,
+.error__message15,
+.error__message16,
+.error__message17,
+.error__message18,
+.error__message19,
+.error__message20,
+.error__message21,
+.error__message22,
+.error__message23,
+.error__message24,
+.error__message25,
+.error__message26,
+.error__message27,
+.error__message28,
+.error__message29,
+.error__message30,
+.error__message31,
+.error__message32,
+.error__message33,
+.error__message34,
+.error__message35,
+.error__message-ssn {
+    color: red;
+    font-family: var(--ff2);
+    font-size: clamp(0.8rem, 0.7296rem + 0.3005vw, 1rem);
+    margin-top: .5rem;
+}
+
+.btn__error-message {
+    color: red;
+    font-size: var(--general-fs);
+    font-family: var(--ff2);
+    margin-top: 1.1rem;
+    text-align: center;
+}
+
+.application__btn {
+    background-color: var(--green-primary);
+    border: .15rem solid transparent;
+    cursor: pointer;
+    color: var(--white);
+    font-size: var(--nav-link-fs);
+    font-weight: 500;
+    padding: 1rem clamp(1.3rem, 1.0313rem + 1.1463vw, 2.063rem);
+    margin-top: 2.5rem;
+    transition: all .4s ease;
+    width: 100%;
+}
+
+.application__btn:is(:hover, :active) {
+    color: var(--black);
+    border: .15rem solid var(--green-primary);
+    background-color: transparent;
+}
