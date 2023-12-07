@@ -1,72 +1,56 @@
-const fullName = document.getElementById('name');
-const email = document.getElementById('email');
-const phoneNumber = document.getElementById('phone__number');
-const errorMsg1 = document.querySelector('.error__message1');
-const errorMsg2 = document.querySelector('.error__message2');
-const errorMsg3 = document.querySelector('.error__message3');
-const errorMsgSsn = document.querySelector('.error__message-ssn');
-const applicationBtn = document.getElementById('application__btn');
-const generalErrorMsg = document.querySelector('.btn__error-message');
-const inputVal = document.querySelector('input')
+const getElement = (id) => document.getElementById(id);
+const querySelector = (className) => document.querySelector(className);
 
-
+const fullName = getElement('name');
+const email = getElement('email');
+const phoneNumber = getElement('phone__number');
+const errorMsg1 = querySelector('.error__message1');
+const errorMsg2 = querySelector('.error__message2');
+const errorMsg3 = querySelector('.error__message3');
+const errorMsgSsn = querySelector('.error__message-ssn');
+const applicationBtn = getElement('application__btn');
+const generalErrorMsg = querySelector('.btn__error-message');
+const inputVal = querySelector('input');
 
 const emailCheckRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const phoneNumberCheckRegex = /^\+\d{1,4}\s\(\d{3}\)\s\d{3}-\d{4}$/;
 const nameCheckRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
 
-
 const validateFullName = (value) => {
-    if (!nameCheckRegex.test(value)) {
-        errorMsg1.innerText = 'Full name required';
-    } else {
-        errorMsg1.innerText = '';
-        generalErrorMsg.innerText = '';
-    }
-}
+    errorMsg1.innerText = !nameCheckRegex.test(value) ? 'Full name required' : '';
+    generalErrorMsg.innerText = '';
+};
 
 const validateEmail = (value) => {
-    if (!emailCheckRegex.test(value)) {
-        errorMsg2.innerText = 'Invalid email';
-    } else {
-        errorMsg2.innerText = '';
-        generalErrorMsg.innerText = '';
-    }
-}
+    errorMsg2.innerText = !emailCheckRegex.test(value) ? 'Invalid email' : '';
+    generalErrorMsg.innerText = '';
+};
 
 const validatePhoneNumber = (value) => {
-    if (!phoneNumberCheckRegex.test(value)) {
-        errorMsg3.innerText = 'Invalid number format';
-    } else {
-        errorMsg3.innerText = '';
-    }
-}
+    errorMsg3.innerText = !phoneNumberCheckRegex.test(value) ? 'Invalid number format' : '';
+};
 
+const validateInput = (element, validator) => {
+    element.addEventListener('input', (e) => validator(e.target.value));
+};
 
-fullName.addEventListener('input', e => validateFullName(e.target.value));
-email.addEventListener('input', e => validateEmail(e.target.value));
-phoneNumber.addEventListener('input', e => validatePhoneNumber(e.target.value));
+validateInput(fullName, validateFullName);
+validateInput(email, validateEmail);
+validateInput(phoneNumber, validatePhoneNumber);
 
+const form = getElement('form');
 
-const form = document.getElementById('form');
-
-applicationBtn.addEventListener('click', e => {
+applicationBtn.addEventListener('click', (e) => {
     const allInputs = form.querySelectorAll('input');
-
-    let allFilled = true;
-
-    for (let i = 0; i < allInputs.length; i++) {
-        if (allInputs[i].value.trim() === '') {
-            allFilled = false;
-            break;
-        }
-    }
+    const allFilled = Array.from(allInputs).every((input) => input.value.trim() !== '');
 
     if (!allFilled) {
         e.preventDefault();
         generalErrorMsg.innerText = 'Some or all fields are empty';
     }
 });
+
+
 
 
 
