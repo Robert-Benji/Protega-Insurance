@@ -27,7 +27,7 @@ const validateEmail = (value) => {
 };
 
 const validatePhoneNumber = (value) => {
-    errorMsg3.innerText = !phoneNumberCheckRegex.test(formattedNumber) ? 'Invalid number format' : '';
+    errorMsg3.innerText = !phoneNumberCheckRegex.test(value) ? 'Invalid number format' : '';
 };
 
 const validateInput = (element, validator) => {
