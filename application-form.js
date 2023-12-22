@@ -27,9 +27,6 @@ const validateEmail = (value) => {
 };
 
 const validatePhoneNumber = (value) => {
-    const digitsOnly = value.replace(/\D/g, '');
-    const formattedNumber = `+${digitsOnly.slice(0, 4)} (${digitsOnly.slice(4, 7)}) ${digitsOnly.slice(7, 10)}-${digitsOnly.slice(10)}`;
-    value = formattedNumber;
     errorMsg3.innerText = !phoneNumberCheckRegex.test(formattedNumber) ? 'Invalid number format' : '';
 };
 
