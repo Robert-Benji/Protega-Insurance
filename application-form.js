@@ -13,7 +13,7 @@ const generalErrorMsg = querySelector('.btn__error-message');
 const inputVal = querySelector('input');
 
 const emailCheckRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-const phoneNumberCheckRegex = /^\+\d{1,4}\s\(\d{3}\)\s\d{3}-\d{4}$/;
+const phoneNumberCheckRegex = ^\+\d{1,4}\s?(\(\d{1,}\))?[.\s-]?\d{1,}[.\s-]?\d{1,}$;
 const nameCheckRegex = /^[a-zA-Z]+ [a-zA-Z]+$/;
 
 const validateFullName = (value) => {
