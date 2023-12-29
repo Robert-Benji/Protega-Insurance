@@ -34,7 +34,7 @@ function formatPhoneNumber() {
        return;
     }
    
-    const formattedPhoneNumber = `+${inputValue.substring(0, 2)} (${inputValue.substring(2, 5)}) ${inputValue.substring(5, 8)}-${inputValue.substring(8)}`;
+    const formattedPhoneNumber = `+${inputValue.substring(0, 1)} (${inputValue.substring(3)}) ${inputValue.substring(3)}-${inputValue.substring(4)}`;
     phoneNumber.value = formattedPhoneNumber;
 }
 
