@@ -26,17 +26,17 @@ const validateEmail = (value) => {
     generalErrorMsg.innerText = '';
 };
 
-function formatPhoneNumber() {
-    const inputValue = phoneNumber.value.replace(/\D/g, '');
+// function formatPhoneNumber() {
+//     const inputValue = phoneNumber.value.replace(/\D/g, '');
    
-    if (inputValue.length === 0) {
-       phoneNumber.value = '';
-       return;
-    }
+//     if (inputValue.length === 0) {
+//        phoneNumber.value = '';
+//        return;
+//     }
    
-    const formattedPhoneNumber = `+${inputValue.substring(0, 1)} (${inputValue.substring(3)}) ${inputValue.substring(3)}-${inputValue.substring(4)}`;
-    phoneNumber.value = formattedPhoneNumber;
-}
+//     const formattedPhoneNumber = `+${inputValue.substring(0, 1)} (${inputValue.substring(3)}) ${inputValue.substring(3)}-${inputValue.substring(4)}`;
+//     phoneNumber.value = formattedPhoneNumber;
+// }
 
 const validateInput = (element, validator) => {
     element.addEventListener('input', (e) => validator(e.target.value));
