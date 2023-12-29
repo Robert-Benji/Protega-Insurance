@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style-components/styles.css">
     <link rel="stylesheet" href="../style-components/css-resets.css">
     <script src="application-form.js" defer></script>
-    <title>Protega Insurance | Job Application Form</title>
+    <title>Protega Insurance | Hire</title>
 </head>
 <body>
     <button type="button" class="back__to-top" id="back__to-top">
@@ -68,7 +68,7 @@
                 
                             <div class="input__field hiring__phone-number">
                                 <label for="phone__number">Phone number</label>
-                                <input type="text" name="phone-number" id="phone__number" required placeholder="+1 (000) 000-0000">
+                                <input type="text" name="phone-number" id="phone__number" oninput="formatPhoneNumber()" required placeholder="+1 (000) 000-0000">
                                 <!-- <i class="bi bi-telephone-fill hiring__phone-icon"></i> -->
                                 <small class="error__message3"></small>
                             </div>

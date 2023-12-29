@@ -26,9 +26,17 @@ const validateEmail = (value) => {
     generalErrorMsg.innerText = '';
 };
 
-const validatePhoneNumber = (value) => {
-    errorMsg3.innerText = !phoneNumberCheckRegex.test(value) ? 'Invalid number format' : '';
-};
+function formatPhoneNumber() {
+    const inputValue = phoneNumber.value.replace(/\D/g, '');
+   
+    if (inputValue.length === 0) {
+       phoneNumber.value = '';
+       return;
+    }
+   
+    const formattedPhoneNumber = `+${inputValue.substring(0, 2)} (${inputValue.substring(2, 5)}) ${inputValue.substring(5, 8)}-${inputValue.substring(8)}`;
+    phoneNumber.value = formattedPhoneNumber;
+}
 
 const validateInput = (element, validator) => {
     element.addEventListener('input', (e) => validator(e.target.value));
